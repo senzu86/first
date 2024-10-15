@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Shop</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"> Creative <span>Shop</span>.</a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="index.html#about">Kesehatan</a>
+        <a href="#about">Fashion</a>
+        <a href="#video">Video Produk</a>
+        <a href="#contact-info"> Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- End Navbar Start -->
+
+    <!-- Section 1  -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Welcome Creative <span>Shop</span></h1>
+        <p>Selamat datang, selamat belanja dan memilih produk pilihanmu</p>
+        <a href="#order" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- End Section 1  -->
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>Produk Fashion</h2>
+      <div class="slider" id="image-slider">
+        <div class="slide active">
+          <img src="produk/gmbr1.jpg" alt="Gambar 1" />
+        </div>
+        <div class="slide">
+          <img src="produk/gmbr2.jpg" alt="Gambar 2" />
+        </div>
+        <button class="prev" onclick="changeImageSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeImageSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Video -->
+    <section id="video" class="video">
+      <h2>Video Produk</h2>
+      <div class="slider" id="video-slider">
+        <div class="svid active">
+          <video controls>
+            <source src="produk/prod1.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+        <div class="svid">
+          <video controls>
+            <source src="produk/prod2.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+        <div class="svid">
+          <video controls>
+            <source src="produk/prod3.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+        <button class="prev" onclick="changeVideoSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeVideoSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- End Vidio -->
+
+    <section id="contact-info" class="contact-info">
+      <h2>Kontak Kami</h2>
+      <div class="contact-container">
+        <div class="contact-item">
+          <h3>Alamat</h3>
+          <p>Jalan Jendral Sudirman No. 123, Jakarta Timur</p>
+        </div>
+        <div class="contact-item">
+          <h3>WhatsApp</h3>
+          <p>+62 812 9568 8085</p>
+        </div>
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>smartclassnew@mail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Order -->
+    <section id="order" class="order">
+      <h2>PESAN DISINI</h2>
+      <h3>COD atau NON COD</h3>
+      <div class="order-options">
+        <a
+          href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20produk%20Creative%20Shop."
+          target="_blank"
+          class="btn-order btn-wa"
+        >
+          <i data-feather="message-circle"></i> <b>WhatsApp </b>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-social">
+          <h3>Ikuti Kami</h3>
+          <ul>
+            <li>
+              <a href="#" target="_blank"
+                ><i data-feather="facebook"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><i data-feather="instagram"></i> Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Perusahaan Kamu. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
